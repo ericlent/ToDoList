@@ -7,23 +7,32 @@ export const styles = StyleSheet.create({
         padding: 24
     },
     title: {
-        textAlign: "center",
-        alignContent: "center",
+        //backgroundColor: "gray",
+        justifyContent: 'center',
         flexDirection: "row",
-        width: "100%",
-        backgroundColor: "white"
+        width: "100%"
     },
-    nameTo: {
+    titleTo: {
         color: "#ADD8E6",
         fontSize: 24,
         fontWeight: "bold",
         marginTop: 48,
     },
-    nameDo: {
+    titleDo: {
         color: "#0088BB",
         fontSize: 24,
         fontWeight: "bold",
         marginTop: 48
+    },
+    txtCriadas: {
+        color: "#ADD8E6",
+        fontSize: 14,
+        fontWeight: "bold"
+    },
+    txtConcluidas: {
+        color: "#0088BB",
+        fontSize: 14,
+        fontWeight: "bold"
     },
     eventDate: {
         color: "#fdfcfe",
@@ -47,7 +56,7 @@ export const styles = StyleSheet.create({
         width: 56,
         height: 56,
         borderRadius: 5,
-        backgroundColor: "#31cf67",
+        backgroundColor: "#1e6f9f",
         alignItems: "center",
         justifyContent: "center",
     },
@@ -55,7 +64,8 @@ export const styles = StyleSheet.create({
         width: "100%",
         flexDirection: "row",
         marginTop: 20,
-        marginBottom: 42
+        marginBottom: 42,
+        justifyContent: "space-between"
     },
     listEmptyText: {
         color: "#fff",

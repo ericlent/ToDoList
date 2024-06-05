@@ -23,10 +23,15 @@ export default function Home() {
     return (
         <View style={styles.container}>
             <View style={styles.title}>
-                <Text style={styles.nameTo}>
+                <Image
+                    source={require("@/assets/images/ToDo.jpg")}
+                    style={{ width: 60, height: 70 }}
+                    resizeMode="stretch" />
+
+                <Text style={styles.titleTo}>
                     To
                 </Text>
-                <Text style={styles.nameDo}>
+                <Text style={styles.titleDo}>
                     Do
                 </Text>
             </View>
@@ -34,7 +39,7 @@ export default function Home() {
             <View style={styles.form}>
                 <TextInput
                     style={styles.input}
-                    placeholder="Adicionar"
+                    placeholder="Adicionar uma nova tarefa"
                     placeholderTextColor={"#6b6b6b"}
                     keyboardType="default"
                     //onChangeText={text => setParticipantName(text)}
@@ -42,13 +47,30 @@ export default function Home() {
                     value={choreName.trim()}
                 />
 
-                <Image />
-
                 <TouchableOpacity style={styles.button} onPress={handleChoreAdd}>
                     <Text style={styles.buttonText}>
                         +
                     </Text>
+
+                    {/*
+                    <Image
+                        source={require("@/assets/images/hoverfalsetypecreate.png")}
+                        style={{ width: 56, height: 56, flex: 1 }}
+                        resizeMode="contain"
+
+                    />
+                    */}
                 </TouchableOpacity>
+            </View>
+
+            <View style={styles.form}>
+                <Text style={styles.txtCriadas}>
+                    Criadas
+                </Text>
+
+                <Text style={styles.txtConcluidas}>
+                    Concluídas
+                </Text>
             </View>
 
         </View>
