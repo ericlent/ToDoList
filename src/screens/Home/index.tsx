@@ -20,6 +20,10 @@ export default function Home() {
         }
     }
 
+    function handleChoreCheck(name: string) {
+        
+    }
+
     function handleChoreRemove(name: string) {
         Alert.alert("Remover", `Remover a tarefa ${name}?`, [
             {
@@ -87,6 +91,7 @@ export default function Home() {
                     <Chore
                         key={item}
                         name={item}
+                        onCheck={() => handleChoreCheck(item)}
                         onRemove={() => handleChoreRemove(item)} />
                 )}
                 showsVerticalScrollIndicator={false}
